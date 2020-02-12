@@ -1,0 +1,39 @@
+name: Geoname Timezones
+description: IANA Timezone IDs in different countries from Geonames
+contributors:
+  - name: Datumorphism
+    github: datumorphism
+data:
+  - path: geonames_timezone.csv
+    format: csv
+    size: 14K
+    updated_at: "2020-02-12"
+    fields:
+      - name: country_code
+        description: Alpha 2 country code
+      - name: timezone_id
+        description: IANA timezone id, www.iana.org
+      - name: gmt_offset
+        description: GMT offset in January 1st
+      - name: dst_offset
+        description: Day light saving offset in July 1st
+      - name: raw_offset
+        description: Raw offset, independant of DST
+  - path: geonames_timezone.json
+    format: json
+    size: 58K
+    updated_at: "2020-02-12"
+    fields:
+      - name: country_code
+        description: Alpha 2 country code
+      - name: timezone_id
+        description: IANA timezone id, www.iana.org
+      - name: gmt_offset
+        description: GMT offset in January 1st
+      - name: dst_offset
+        description: Day light saving offset in July 1st
+      - name: raw_offset
+        description: Raw offset, independant of DST
+references:
+  - name: Geonames Download Server
+    link: https://download.geonames.org/export/dump/
