@@ -4,7 +4,8 @@ contributors:
   - name: Datumorphism
     github: datumorphism
 data:
-  - path: geonames_timezone.csv
+  - path: dataset/geonames_timezone.csv
+    name: timezones in csv format
     format: csv
     size: 14K
     updated_at: "2020-02-12"
@@ -19,7 +20,7 @@ data:
         description: Day light saving offset in July 1st
       - name: raw_offset
         description: Raw offset, independant of DST
-  - path: geonames_timezone.json
+  - path: dataset/geonames_timezone.json
     format: json
     size: 58K
     updated_at: "2020-02-12"
